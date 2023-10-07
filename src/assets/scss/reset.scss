@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.custom-btn {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  background-color: var(--color-secundary);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: 0.5s background;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: rgba(24, 95, 171, 0.85);
+  }
+}
