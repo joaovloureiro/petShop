@@ -20,7 +20,15 @@
 }
 
 .info-banner {
-  padding: 80px 0;
+  padding: 5rem 0;
+
+  &.first-banner {
+    padding-top: 7.5rem;
+  }
+
+  &.last-banner {
+    padding-bottom: 7.5rem;
+  }
 
   .text-content {
     text-align: left;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderStateManagerService } from 'src/app/services/header-state-manager.service';
 
 @Component({
   selector: 'app-layout-portal',
@@ -6,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout-portal.component.scss'],
 })
 export class LayoutPortalComponent implements OnInit {
-  constructor() {}
+  whiteHeader: boolean = false;
 
-  ngOnInit(): void {}
+  constructor(private headerManager: HeaderStateManagerService) {}
+
+  ngOnInit(): void {
+    this.getHeaderState();
+  }
+
+  getHeaderState() {
+    this.headerManager.defaultHeader.subscribe((state: any) => {
+      this.whiteHeader = !state;
+
+      console.log(this.whiteHeader);
+    });
+  }
 }
