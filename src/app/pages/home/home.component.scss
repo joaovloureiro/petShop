@@ -36,34 +36,15 @@
       height: 442px;
     }
 
-    .img-2 {
-      height: 300px;
+    .bird-img {
+      position: absolute;
+      width: 200px;
+      right: -65px;
+      top: -165px;
     }
 
-    .footprint-container {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      height: 120px;
-      width: 90px;
-      transform: rotate(12deg);
-
-      .img-1,
-      .img-2,
-      .img-3 {
-        height: 40px;
-        width: 32px;
-      }
-
-      .img-2 {
-        transform: rotate(8deg);
-        align-self: flex-end;
-      }
-
-      .img-1,
-      .img-3 {
-        transform: rotate(-8deg);
-      }
+    .img-2 {
+      height: 300px;
     }
   }
 }

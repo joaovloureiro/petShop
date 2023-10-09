@@ -11,6 +11,7 @@ header {
   border-radius: 0 0 16px 16px;
   position: fixed;
   width: 100%;
+  z-index: 99;
 
   a.header-logo img {
     width: 80px;
@@ -39,11 +40,11 @@ header {
           width: 100%;
           transform: scaleX(0);
           height: 2px;
-          bottom: -0.5rem;
+          bottom: -0.75rem;
           left: 0;
           background-color: var(--color-text);
           transform-origin: center;
-          transition: transform 0.25s ease-out;
+          transition: transform 0.3s ease-out;
         }
 
         &:hover::after {
